@@ -19,7 +19,7 @@ class ChatViewController: UIViewController {
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
-        random = Int.random(in: 1...5)
+        random = Int.random(in: 1...6)
         switch random {
         case 1:
             sender.backgroundColor = .red
@@ -31,6 +31,8 @@ class ChatViewController: UIViewController {
             sender.backgroundColor = .green
         case 5:
             sender.backgroundColor = .orange
+        case 6:
+            sender.backgroundColor = .white
         default:
             break
         }
