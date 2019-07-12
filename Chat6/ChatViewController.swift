@@ -9,10 +9,18 @@
 import UIKit
 
 class ChatViewController: UIViewController {
-
+    
+    var flag = false
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        flag = !flag
+        flag ? (sender.backgroundColor = .red) : (sender.backgroundColor = .white)
     }
 
 }
