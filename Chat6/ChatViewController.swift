@@ -20,7 +20,7 @@ class ChatViewController: UIViewController {
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         flag = !flag
-        flag ? (sender.backgroundColor = .red) : (sender.backgroundColor = .white)
+        flag ? (sender.backgroundColor = .black) : (sender.backgroundColor = .white)
     }
 
 }
