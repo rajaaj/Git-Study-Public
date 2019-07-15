@@ -10,7 +10,7 @@ import UIKit
 
 class ChatViewController: UIViewController {
     
-    var flag = false
+    var random: Int?
     
     
     override func viewDidLoad() {
@@ -19,8 +19,23 @@ class ChatViewController: UIViewController {
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
-        flag = !flag
-        flag ? (sender.backgroundColor = .black) : (sender.backgroundColor = .white)
+        random = Int.random(in: 1...6)
+        switch random {
+        case 1:
+            sender.backgroundColor = .red
+        case 2:
+            sender.backgroundColor = .yellow
+        case 3:
+            sender.backgroundColor = .blue
+        case 4:
+            sender.backgroundColor = .green
+        case 5:
+            sender.backgroundColor = .orange
+        case 6:
+            sender.backgroundColor = .white
+        default:
+            break
+        }
     }
 
 }
