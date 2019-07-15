@@ -24,10 +24,22 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qAC-gs-uvK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pB-j8-P28">
+                                <rect key="frame" x="50" y="196" width="275" height="275"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8pB-j8-P28" secondAttribute="height" multiplier="1:1" id="bzI-uO-z0W"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="36C-GC-B1y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="8pB-j8-P28" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="FMC-aj-gID"/>
                             <constraint firstItem="zRA-kJ-m27" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QK0-28-bvl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8pB-j8-P28" secondAttribute="trailing" constant="50" id="Tc1-R1-7Q5"/>
+                            <constraint firstItem="8pB-j8-P28" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VpA-Lo-X93"/>
                             <constraint firstItem="zRA-kJ-m27" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="odP-Ig-5Xf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zRA-kJ-m27" secondAttribute="trailing" id="tZH-1g-kIJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zRA-kJ-m27" secondAttribute="bottom" id="thh-s6-MYg"/>
